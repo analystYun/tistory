@@ -1,0 +1,75 @@
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+            background-position:center center; background-repeat:no-repeat; width:100%; background-size:cover; display:table; table-layout:fixed; background-color:#000; overflow:hidden;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+
+
+
+<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<div id="fullpage">
+	<div class="section " id="section0" style="background-image:url('/web/season2_skin/skin1/images/mainbn01.jpg');"></div>
+    <div class="section " id="section1" style="background-image:url('/web/season2_skin/skin1/images/mainbn02.jpg');"></div>
+    <div class="section " id="section2" style="background-image:url('/web/season2_skin/skin1/images/mainbn03.jpg');"></div>
+    <div class="section " id="section3" style="background-image:url('/web/season2_skin/skin1/images/mainbn04.jpg');"></div>
+    <div class="section " id="section4" style="background-image:url('/web/season2_skin/skin1/images/mainbn05.jpg');">
+        <div style="position:absolute;bottom:0px;width:100%;"><!--@import(/layout/basic/bottom.html)--></div>
+    </div>
+
+
+</div>
+	<script type="text/javascript">
+			$('#fullpage').fullpage({
+				anchors: [''],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: [''],
+                fitToSectionDelay: 0,
+                scrollingSpeed: 400,
+                showActiveTooltip: true,
+                menu: true,
+			});
+	</script>
